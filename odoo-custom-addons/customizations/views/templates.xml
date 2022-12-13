@@ -1,6 +1,8 @@
 <odoo>
     <data>
 <!--
+                      <field name="analytic_account_id" optional="show" groups="analytic.group_analytic_accounting"/>
+
         <template id="listing">
           <ul>
             <li t-foreach="objects" t-as="object">
