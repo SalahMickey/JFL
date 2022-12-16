@@ -2,8 +2,8 @@
 <odoo>
     <data>
  <record id="view_order_form_inherit" model="ir.ui.view">
-        	<field name="name">Sale Order Custom</field>
-        	<field name="model">sale.order</field>
+        	<field name="name">HR Custom</field>
+        	<field name="model">customizations.hrEmployeeInherit</field>
         	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
         	<field name="arch" type="xml">
             	<field name="work_phone" position="after">
