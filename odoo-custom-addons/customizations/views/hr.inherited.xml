@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+ <record id="view_order_form_inherit" model="ir.ui.view">
+        	<field name="name">Sale Order Custom</field>
+        	<field name="model">sale.order</field>
+        	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
+        	<field name="arch" type="xml">
+            	<field name="work_phone" position="after">
+                		<field name="additional_note"/>
+            	</field>
+        	</field>
+</record>
+    </data>
+</odoo>

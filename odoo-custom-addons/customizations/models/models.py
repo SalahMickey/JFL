@@ -15,6 +15,8 @@ from odoo import models, fields, api
 #         for record in self:
 #             record.value2 = float(record.value) / 100
 
-class accountMoveInherit(models.Model):
-    _inherit = "account.move"
-    analytic_account_id = fields.Many2one('account.analytic.account', string='Analytic Account', check_company=True)
+class hrEmployeeInherit(models.Model):
+    _inherit = "res.users"
+
+    additional_note = fields.Char(string='Additional Note')
+
