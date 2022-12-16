@@ -3,10 +3,14 @@
     <data>
  <record id="view_order_form_inherit" model="ir.ui.view">
         	<field name="name">HR Custom</field>
+			<!--MODEL TO INHERIT     -->
         	<field name="model">res.users</field>
+										<!--VIEW TO INHERIT     -->
         	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
+			<!--Field Position    -->
         	<field name="arch" type="xml">
             	<field name="work_phone" position="after">
+				<!--FIELD     -->
                 		<field name="additional_note"/>
             	</field>
         	</field>
