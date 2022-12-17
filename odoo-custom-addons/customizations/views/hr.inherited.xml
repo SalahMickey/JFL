@@ -8,7 +8,7 @@
 										<!--VIEW TO INHERIT     -->
         	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
 			<!--Field Position    -->
-        	<field name="arch" type="xml">
+        	<xpath expr="//field[@name='private_email']/tree/field[2]" position="after">
             	<field name="private_email" position="after">
 				<!--FIELD     -->
                 		<field name="bank_code"/>
