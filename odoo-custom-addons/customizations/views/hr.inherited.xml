@@ -9,9 +9,10 @@
         	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
 			<!--Field Position    -->
         	<field name="arch" type="xml">
-            	<field name="work_phone" position="after">
+            	<field name="private_email" position="after">
 				<!--FIELD     -->
-                		<field name="additional_note"/>
+                		<field name="bank_code"/>
+						<field name="bank_acc_num"/>
             	</field>
         	</field>
 </record>

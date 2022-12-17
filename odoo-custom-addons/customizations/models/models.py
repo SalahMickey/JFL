@@ -6,5 +6,5 @@ from odoo import models, fields, api
 class hrEmployeeInherit(models.Model):
     _inherit = "res.users" # Inherited Model
 
-    additional_note = fields.Char(string='Additional Note')
-
+    bank_code = fields.Char(string='Bank Code')
+    bank_acc_num = fields.Char(string='Bank Account')
