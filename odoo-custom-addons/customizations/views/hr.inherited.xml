@@ -8,16 +8,20 @@
 										<!--VIEW TO INHERIT     -->
         	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
 			<!--Field Position    -->
-<xpath expr="//page[@string='personal_information']/group" position="after">
-  <group>
-    <field name="bank_code"/>
-						<field name="bank_acc_num"/>
-  </group>
-</xpath>
+
+    <field name="arch" type="xml">
+
+
+				<xpath expr="//page[@string='personal_information']/group" position="after">
+				<group>
+					<field name="bank_code"/>
+					<field name="bank_acc_num"/>
+				</group>
+				</xpath>
         
 						
-
         	</field>
+
 </record>
     </data>
 </odoo>
