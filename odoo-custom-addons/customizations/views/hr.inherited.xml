@@ -14,6 +14,8 @@
                 		<field name="bank_code"/>
 						<field name="bank_acc_num"/>
             	</field>
+							</xpath>
+
         	</field>
 </record>
     </data>
