@@ -1,10 +1,25 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+# class customizations(models.Model):
+#     _name = 'customizations.customizations'
+#     _description = 'customizations.customizations'
 
-#Model
+#     name = fields.Char()
+#     value = fields.Integer()
+#     value2 = fields.Float(compute="_value_pc", store=True)
+#     description = fields.Text()
+#
+#     @api.depends('value')
+#     def _value_pc(self):
+#         for record in self:
+#             record.value2 = float(record.value) / 100
+
+
+
+#M
 class hrEmployeeInherit(models.Model):
-    _inherit = "hr.employee" # Inherited Model
+    _inherit = "res.users"
 
-    bank_code = fields.Char(string='Bank Code')
-    bank_acc_num = fields.Char(string='Bank account')
+    bank_acc = fields.Char(string='Additional Note')
+

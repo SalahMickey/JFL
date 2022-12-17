@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
- <record id="view_order_form_inherit_hr" model="ir.ui.view">
+ <record id="view_order_form_inherit" model="ir.ui.view">
         	<field name="name">HR Custom</field>
-			<!--MODEL TO-->
-        	<field name="model">hr.employee</field>
-        	<field name="inherit_id" ref="hr.view_employee_form"/>
+        	<field name="model">res.users</field>
+        	<field name="inherit_id" ref="hr.res_users_view_form_profile"/>
         	<field name="arch" type="xml">
             	<field name="work_phone" position="after">
-                		<field name="bank_code"/>
+                		<field name="bank_acc"/>
             	</field>
         	</field>
 </record>
