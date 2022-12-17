@@ -12,7 +12,7 @@
     <field name="arch" type="xml">
 
 
-				<xpath expr="//page[@string='personal_information']/group" position="after">
+				<xpath expr="//page[@string='Private Information']/group" position="after">
 				<group>
 					<field name="bank_code"/>
 					<field name="bank_acc_num"/>
