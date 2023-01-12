@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
+<!--
     <record model="ir.ui.view" id="customizations.list">
       <field name="name">Penalties</field>
       <field name="model">customizations.penalties</field>
@@ -14,14 +14,12 @@
     </record>
 
 
-    <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="customizations.action_window">
       <field name="name">customizations window</field>
       <field name="res_model">customizations.penalties</field>
       <field name="view_mode">tree,form</field>
     </record>
-    <!-- server action to the one above -->
 
     <record model="ir.actions.server" id="customizations.action_server">
       <field name="name">customizations server</field>
@@ -37,16 +35,15 @@
     </record>
 
 
-    <!-- Top menu item -->
 
     <menuitem name="customizations" id="customizations.menu_root"/>
-    <!-- menu categories -->
     <menuitem name="Menu 1" id="customizations.menu_1" parent="customizations.menu_root"/>
     <menuitem name="Menu 2" id="customizations.menu_2" parent="customizations.menu_root"/>
-    <!-- actions -->
     <menuitem name="List" id="customizations.menu_1_list" parent="customizations.menu_1"
               action="customizations.action_window"/>
     <menuitem name="Server to list" id="customizations" parent="customizations.menu_2"
               action="customizations.action_server"/>
+  -->
   </data>
+  
 </odoo>
