@@ -23,3 +23,9 @@ class hrEmployeeInherit(models.Model):
 
     bank_acc = fields.Char(string='Additional Note')
 
+class Penalties(models.Model):
+    _name = "customizations.penalties"
+    _description = "New Form"
+
+    employee_id = fields.Many2one('hr.employee', string='Employee', required=True, readonly=True, help="Employee",
+                                  states={'draft': [('readonly', False)]})
