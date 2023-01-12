@@ -18,15 +18,15 @@ from odoo import models, fields, api
 
 
 #M
-class hrEmployeeInherit(models.Model):
-    _inherit = "res.users"
 
-    bank_acc = fields.Char(string='Additional Note')
-"""
 class Penalties(models.Model):
     _name = "customizations.penalties"
     _description = "New Form"
 
     employee_id = fields.Many2one('hr.employee', string='Employee', required=True, readonly=True, help="Employee",
+
                                   states={'draft': [('readonly', False)]})
-"""
+    @api.depends('value')
+    def _value_pc(self):
+            for record in self:
+                record.value2 = float(record.value) / 100
